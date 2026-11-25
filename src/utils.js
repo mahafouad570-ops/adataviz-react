@@ -1,3 +1,4 @@
+
 export function formaterDonnee(arbre) {
     return {
         id: arbre.arbres_idbase + "-" + arbre.com_url_pdf,
@@ -7,7 +8,10 @@ export function formaterDonnee(arbre) {
         adresse: arbre.arbres_adresse,
         arrondissement: arbre.arbres_arrondissement,
         hauteur: arbre.arbres_hauteurenm,
-        photo:arbre.com_url_photo1
+        photo:arbre.com_url_photo1,
+
+        resume: arbre.com_resume,
+        anneePlantation: arbre.com_annee_plantation,
     }
 }
 
