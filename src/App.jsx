@@ -76,8 +76,8 @@ export default function App() {
         </section>
         <p className="compteur">{visibles.length} arbres remarquables</p>
         <section className="cartes">
-          {visibles.map((arbre) => (
-            <Carte key={arbre.id} {...arbre} />
+          {visibles.map((arbre, index) => (
+            <Carte key={arbre.id} {...arbre} offset={`${Math.min(index, 20) * 0.05}s`} />
           ))}
         </section>
         {visibles.length === 0 && (

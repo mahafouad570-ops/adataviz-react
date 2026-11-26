@@ -1,9 +1,9 @@
 import { useState } from "react";
 
-export default function Carte({ nom, nomLatin, categorie, adresse, hauteur, photo, resume, anneePlantation }) {
+export default function Carte({ nom, nomLatin, categorie, adresse, hauteur, photo, resume, anneePlantation, offset }) {
     const [ouvert, setOuvert] = useState(false);
     return (
-        <article className="carte">
+        <article className="carte" style={{ "--offset": offset}}>
             <span className="badge">{categorie}</span>
             <img className="carte-image" src={photo} alt={nom} />
             <h2>{nom}</h2>
