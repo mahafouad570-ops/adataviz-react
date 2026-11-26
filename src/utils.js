@@ -9,7 +9,6 @@ export function formaterDonnee(arbre) {
         arrondissement: arbre.arbres_arrondissement,
         hauteur: arbre.arbres_hauteurenm,
         photo:arbre.com_url_photo1,
-
         resume: arbre.com_resume,
         anneePlantation: arbre.com_annee_plantation,
     }
